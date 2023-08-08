@@ -28,7 +28,7 @@ class _WidgetsListState extends State<WidgetsList> {
             title: Text(
               "TestApp",
               style: GoogleFonts.tillana(
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w400,
                   fontSize: 28,
                   textStyle: TextStyle(
                     color: Color.fromARGB(255, 255, 255, 255),
@@ -48,7 +48,7 @@ class _WidgetsListState extends State<WidgetsList> {
                 Text(
                   "WidgetsList",
                   style: GoogleFonts.ebGaramond(
-                      fontSize: 26, fontWeight: FontWeight.w500),
+                      fontSize: 26, fontWeight: FontWeight.w400),
                 ),
                 Divider(
                   height: 6,
@@ -67,7 +67,7 @@ class _WidgetsListState extends State<WidgetsList> {
                     height: MediaQuery.of(context).size.height / 12,
                     width: MediaQuery.of(context).size.width / 1,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 153, 99),
+                        color: Color.fromARGB(199, 175, 188, 255),
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
@@ -75,9 +75,9 @@ class _WidgetsListState extends State<WidgetsList> {
                           title: Text(
                             'Container',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20,
-                                fontWeight: FontWeight.w500),
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ],
@@ -96,7 +96,7 @@ class _WidgetsListState extends State<WidgetsList> {
                     height: MediaQuery.of(context).size.height / 12,
                     width: MediaQuery.of(context).size.width / 1,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 153, 99),
+                        color: Color.fromARGB(199, 175, 188, 255),
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
@@ -104,9 +104,9 @@ class _WidgetsListState extends State<WidgetsList> {
                           title: Text(
                             'Icon',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20,
-                                fontWeight: FontWeight.w500),
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ],
@@ -125,7 +125,7 @@ class _WidgetsListState extends State<WidgetsList> {
                     height: MediaQuery.of(context).size.height / 12,
                     width: MediaQuery.of(context).size.width / 1,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 153, 99),
+                        color: Color.fromARGB(199, 175, 188, 255),
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
@@ -133,9 +133,9 @@ class _WidgetsListState extends State<WidgetsList> {
                           title: Text(
                             'Text',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20,
-                                fontWeight: FontWeight.w500),
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ],
@@ -154,7 +154,7 @@ class _WidgetsListState extends State<WidgetsList> {
                     height: MediaQuery.of(context).size.height / 12,
                     width: MediaQuery.of(context).size.width / 1,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 153, 99),
+                        color: Color.fromARGB(199, 175, 188, 255),
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
@@ -162,9 +162,9 @@ class _WidgetsListState extends State<WidgetsList> {
                           title: Text(
                             'Textfeld',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20,
-                                fontWeight: FontWeight.w500),
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ],
@@ -183,7 +183,7 @@ class _WidgetsListState extends State<WidgetsList> {
                     height: MediaQuery.of(context).size.height / 12,
                     width: MediaQuery.of(context).size.width / 1,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 153, 99),
+                        color: Color.fromARGB(199, 175, 188, 255),
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
@@ -191,9 +191,9 @@ class _WidgetsListState extends State<WidgetsList> {
                           title: Text(
                             'Image',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20,
-                                fontWeight: FontWeight.w500),
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ],
@@ -212,7 +212,7 @@ class _WidgetsListState extends State<WidgetsList> {
                     height: MediaQuery.of(context).size.height / 12,
                     width: MediaQuery.of(context).size.width / 1,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 153, 99),
+                        color: Color.fromARGB(199, 175, 188, 255),
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
@@ -220,9 +220,9 @@ class _WidgetsListState extends State<WidgetsList> {
                           title: Text(
                             'Buttons',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20,
-                                fontWeight: FontWeight.w500),
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ],
@@ -241,7 +241,7 @@ class _WidgetsListState extends State<WidgetsList> {
                     height: MediaQuery.of(context).size.height / 12,
                     width: MediaQuery.of(context).size.width / 1,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 153, 99),
+                        color: Color.fromARGB(199, 175, 188, 255),
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
@@ -249,9 +249,9 @@ class _WidgetsListState extends State<WidgetsList> {
                           title: Text(
                             'StateFul Widgets',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20,
-                                fontWeight: FontWeight.w500),
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ],

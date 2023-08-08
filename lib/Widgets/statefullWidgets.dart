@@ -8,14 +8,13 @@ class stsful extends StatefulWidget {
   State<stsful> createState() => _stsfulState();
 }
 
-enum SingingCharacter { Radio_1, Radio_2 }
+enum lan { Dart, C, Python, Java }
 
 class _stsfulState extends State<stsful> {
   bool valu = false;
   bool value = false;
   double value1 = 0;
-  bool radio = true;
-  SingingCharacter _car = SingingCharacter.Radio_1;
+  lan Selected = lan.Dart;
 
   @override
   Widget build(BuildContext context) {
@@ -130,36 +129,65 @@ class _stsfulState extends State<stsful> {
             SizedBox(
               height: 10,
             ),
-            Row(
-              children: [
-                Column(
-                  children: [
-                    ListTile(
-                      title: Text('Radio 1'),
-                      leading: Radio(
-                          value: SingingCharacter.Radio_1,
-                          groupValue: _car,
-                          onChanged: (SingingCharacter? value2) {
-                            setState(() {
-                              _car = value2!;
-                            });
-                          }),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                children: [
+                  Text(
+                    "Radio",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  ListTile(
+                    title: Text('Dart'),
+                    leading: Radio(
+                      value: lan.Dart,
+                      groupValue: Selected,
+                      onChanged: (value) {
+                        setState(() {
+                          Selected = value!;
+                        });
+                      },
                     ),
-                    ListTile(
-                      title: Text('Radio 2'),
-                      leading: Radio(
-                          value: SingingCharacter.Radio_2,
-                          groupValue: _car,
-                          onChanged: (SingingCharacter? value3) {
-                            setState(() {
-                              _car = value3!;
-                            });
-                          }),
-                    )
-                  ],
-                )
-              ],
-            ),
+                  ),
+                  ListTile(
+                    title: Text('C'),
+                    leading: Radio(
+                      value: lan.C,
+                      groupValue: Selected,
+                      onChanged: (value) {
+                        setState(() {
+                          Selected = value!;
+                        });
+                      },
+                    ),
+                  ),
+                  ListTile(
+                    title: Text('Python'),
+                    leading: Radio(
+                      value: lan.Python,
+                      groupValue: Selected,
+                      onChanged: (value) {
+                        setState(() {
+                          Selected = value!;
+                        });
+                      },
+                    ),
+                  ),
+                  ListTile(
+                    title: Text('Java'),
+                    leading: Radio(
+                      value: lan.Java,
+                      groupValue: Selected,
+                      onChanged: (value) {
+                        setState(() {
+                          Selected = value!;
+                        });
+                      },
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
