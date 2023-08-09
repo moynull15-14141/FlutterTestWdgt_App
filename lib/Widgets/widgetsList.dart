@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:tst1/Widgets.dart/imags.dart';
-import 'package:tst1/Widgets.dart/statefullWidgets.dart';
-import 'package:tst1/Widgets.dart/textfeld.dart';
-import 'package:tst1/Widgets.dart/texts.dart';
+import 'package:tst1/Widgets/imags.dart';
+import 'package:tst1/Widgets/statefullWidgets.dart';
+import 'package:tst1/Widgets/textfeld.dart';
+import 'package:tst1/Widgets/texts.dart';
 
 import 'btns.dart';
 import 'containers.dart';

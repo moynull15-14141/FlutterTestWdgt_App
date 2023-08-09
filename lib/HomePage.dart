@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'Widgets.dart/widgetsList.dart';
+import 'Widgets/widgetsList.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -52,6 +52,32 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
                   ),
                   subtitle: Text("All Type Widgets"),
+                  trailing: IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => WidgetsList()));
+                      },
+                      icon: Icon(Icons.arrow_forward_ios)),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Color.fromARGB(199, 175, 188, 255)),
+                height: MediaQuery.of(context).size.height / 12,
+                width: MediaQuery.of(context).size.width / 1.0,
+                child: ListTile(
+                  leading: Icon(Icons.layers),
+                  title: Text(
+                    'Layouts',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                  ),
+                  subtitle: Text("All Type Layouts"),
                   trailing: IconButton(
                       onPressed: () {
                         Navigator.push(
