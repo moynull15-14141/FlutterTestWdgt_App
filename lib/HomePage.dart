@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tst1/Laouts/layoutsLandpage.dart';
 
 import 'Widgets/widgetsList.dart';
 
@@ -80,10 +81,8 @@ class _HomePageState extends State<HomePage> {
                   subtitle: Text("All Type Layouts"),
                   trailing: IconButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetsList()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => layouts()));
                       },
                       icon: Icon(Icons.arrow_forward_ios)),
                 ),
