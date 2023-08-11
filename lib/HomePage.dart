@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tst1/AppBar/AppBarList.dart';
+import 'package:tst1/Lists/List_list.dart';
 import 'package:tst1/Laouts/layoutsLandpage.dart';
 
 import 'Widgets/widgetsList.dart';
@@ -83,6 +85,58 @@ class _HomePageState extends State<HomePage> {
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => layouts()));
+                      },
+                      icon: Icon(Icons.arrow_forward_ios)),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Color.fromARGB(199, 175, 188, 255)),
+                height: MediaQuery.of(context).size.height / 12,
+                width: MediaQuery.of(context).size.width / 1.0,
+                child: ListTile(
+                  leading: Icon(Icons.list),
+                  title: Text(
+                    'List',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                  ),
+                  subtitle: Text("All Type List"),
+                  trailing: IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => List_list()));
+                      },
+                      icon: Icon(Icons.arrow_forward_ios)),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Color.fromARGB(199, 175, 188, 255)),
+                height: MediaQuery.of(context).size.height / 12,
+                width: MediaQuery.of(context).size.width / 1.0,
+                child: ListTile(
+                  leading: Icon(Icons.app_shortcut),
+                  title: Text(
+                    'App Bars',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                  ),
+                  subtitle: Text("All Type List"),
+                  trailing: IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AppBarList()));
                       },
                       icon: Icon(Icons.arrow_forward_ios)),
                 ),
