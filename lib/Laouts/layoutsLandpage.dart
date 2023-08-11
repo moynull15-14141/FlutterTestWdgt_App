@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tst1/Laouts/Expandeds.dart';
 import 'package:tst1/Laouts/Row_Column.dart';
+import 'package:tst1/Laouts/Wraps.dart';
 import 'package:tst1/Laouts/containar.dart';
+import 'package:tst1/Laouts/stacks.dart';
 
 class layouts extends StatefulWidget {
   const layouts({super.key});
@@ -100,6 +103,108 @@ class _layoutsState extends State<layouts> {
                     ListTile(
                       title: Text(
                         'Row & Column',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (Context) => wraps()));
+              },
+              child: Container(
+                height: MediaQuery.of(context).size.height / 12,
+                width: MediaQuery.of(context).size.width / 1,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(199, 175, 188, 255),
+                    borderRadius: BorderRadius.circular(8)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 5,
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Wrap',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (Context) => expandeds()));
+              },
+              child: Container(
+                height: MediaQuery.of(context).size.height / 12,
+                width: MediaQuery.of(context).size.width / 1,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(199, 175, 188, 255),
+                    borderRadius: BorderRadius.circular(8)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 5,
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Expanded',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (Context) => stacks()));
+              },
+              child: Container(
+                height: MediaQuery.of(context).size.height / 12,
+                width: MediaQuery.of(context).size.width / 1,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(199, 175, 188, 255),
+                    borderRadius: BorderRadius.circular(8)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 5,
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Stack',
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,

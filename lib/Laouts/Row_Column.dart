@@ -66,7 +66,9 @@ class _Row_columnState extends State<Row_column> {
                 Expanded(
                     child: Container(
                   child: Center(
-                    child: option == 'Column' ? Clm() : rows(),
+                    child: option == 'Column'
+                        ? Clm()
+                        : rows(), // this line is main part and button condition
                   ),
                 ))
               ],
