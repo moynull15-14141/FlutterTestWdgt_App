@@ -4,6 +4,7 @@ import 'package:tst1/AppBar/AppBarList.dart';
 import 'package:tst1/Lists/List_list.dart';
 import 'package:tst1/Laouts/layoutsLandpage.dart';
 
+import 'Navigation/navigations.dart';
 import 'Widgets/widgetsList.dart';
 
 class HomePage extends StatefulWidget {
@@ -140,7 +141,33 @@ class _HomePageState extends State<HomePage> {
                       },
                       icon: Icon(Icons.arrow_forward_ios)),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Color.fromARGB(199, 175, 188, 255)),
+                height: MediaQuery.of(context).size.height / 12,
+                width: MediaQuery.of(context).size.width / 1.0,
+                child: ListTile(
+                  leading: Icon(Icons.navigation),
+                  title: Text(
+                    'Navigation',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                  ),
+                  subtitle: Text("All Type Navigation"),
+                  trailing: IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => navigations()));
+                      },
+                      icon: Icon(Icons.arrow_forward_ios)),
+                ),
+              ),
             ],
           ),
         ),
