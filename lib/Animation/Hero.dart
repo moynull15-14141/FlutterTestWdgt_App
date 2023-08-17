@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tst1/Animation/cover_jpg.dart';
 import 'package:tst1/Animation/profile.dart';
 
+import '../HomePage.dart';
+
 class heros extends StatefulWidget {
   const heros({super.key});
 
@@ -78,9 +80,17 @@ class _herosState extends State<heros> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      Icons.home,
-                      size: 30,
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (Context) => HomePage()));
+                      },
+                      child: Icon(
+                        Icons.home,
+                        size: 30,
+                      ),
                     ),
                     Icon(Icons.videocam, size: 30),
                     Icon(Icons.group_rounded, size: 30),

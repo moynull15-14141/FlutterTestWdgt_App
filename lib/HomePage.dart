@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:tst1/AppBar/AppBarList.dart';
 import 'package:tst1/Lists/List_list.dart';
 import 'package:tst1/Laouts/layoutsLandpage.dart';
+import 'package:tst1/plugins/pluginsList.dart';
 
 import 'Animation/animationList.dart';
 import 'Navigation/navigations.dart';
@@ -191,6 +192,30 @@ class _HomePageState extends State<HomePage> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => animationList()));
+                      },
+                      icon: Icon(Icons.arrow_forward_ios)),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Color.fromARGB(199, 175, 188, 255)),
+                height: MediaQuery.of(context).size.height / 12,
+                width: MediaQuery.of(context).size.width / 1.0,
+                child: ListTile(
+                  leading: Icon(Icons.power),
+                  title: Text(
+                    'Plugins',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                  ),
+                  subtitle: Text("All Type Plugins"),
+                  trailing: IconButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => plugins()));
                       },
                       icon: Icon(Icons.arrow_forward_ios)),
                 ),
