@@ -8,6 +8,7 @@ import 'package:tst1/Widgets/texts.dart';
 
 import 'btns.dart';
 import 'containers.dart';
+import 'dateTime.dart';
 import 'icons.dart';
 
 class WidgetsList extends StatefulWidget {
@@ -248,6 +249,35 @@ class _WidgetsListState extends State<WidgetsList> {
                         ListTile(
                           title: Text(
                             'StateFul Widgets',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (Context) => datetime()));
+                  },
+                  child: Container(
+                    height: MediaQuery.of(context).size.height / 12,
+                    width: MediaQuery.of(context).size.width / 1,
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(199, 175, 188, 255),
+                        borderRadius: BorderRadius.circular(8)),
+                    child: Column(
+                      children: [
+                        ListTile(
+                          title: Text(
+                            'Date-Time',
                             style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 20,
