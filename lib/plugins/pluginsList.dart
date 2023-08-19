@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:image_picker/image_picker.dart';
 
 class plugins extends StatefulWidget {
   const plugins({super.key});
@@ -9,6 +12,9 @@ class plugins extends StatefulWidget {
 }
 
 class _pluginsState extends State<plugins> {
+  ImageSource source = ImageSource.camera;
+  String? imagePath;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -33,8 +39,59 @@ class _pluginsState extends State<plugins> {
         ),
       ),
       body: Column(
-        children: [],
+        children: [
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+              height: 400,
+              width: 300,
+              color: Colors.blueGrey,
+              child: Card(
+                  elevation: 10,
+                  child: imagePath == null
+                      ? Image.asset('images/person.png')
+                      : Image.file(File(imagePath!)))),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 80,
+              ),
+              ElevatedButton.icon(
+                  onPressed: () {
+                    source = ImageSource.camera;
+
+                    getImage();
+                  },
+                  icon: Icon(Icons.camera_alt),
+                  label: Text("Camera")),
+              SizedBox(
+                width: 10,
+              ),
+              ElevatedButton.icon(
+                  onPressed: () {
+                    source = ImageSource.gallery;
+                    getImage();
+                  },
+                  icon: Icon(Icons.photo_album),
+                  label: Text("Gallery"))
+            ],
+          )
+        ],
       ),
     ));
+  }
+
+  void getImage() async {
+    final selectedImage = await ImagePicker().pickImage(source: source);
+
+    if (selectedImage != null) {
+      setState(() {
+        imagePath = selectedImage.path;
+      });
+    }
   }
 }
