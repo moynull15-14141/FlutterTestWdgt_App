@@ -45,179 +45,248 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Color.fromARGB(199, 175, 188, 255)),
-                height: MediaQuery.of(context).size.height / 12,
-                width: MediaQuery.of(context).size.width / 1.0,
-                child: ListTile(
-                  leading: Icon(Icons.widgets),
-                  title: Text(
-                    'Widgets',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => WidgetsList()));
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Color.fromARGB(199, 175, 188, 255)),
+                  height: MediaQuery.of(context).size.height / 12,
+                  width: MediaQuery.of(context).size.width / 1.0,
+                  child: ListTile(
+                    leading: Icon(Icons.widgets),
+                    title: Text(
+                      'Widgets',
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                    ),
+                    subtitle: Text("All Type Widgets"),
+                    trailing: IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => WidgetsList()));
+                        },
+                        icon: Icon(Icons.arrow_forward_ios)),
                   ),
-                  subtitle: Text("All Type Widgets"),
-                  trailing: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetsList()));
-                      },
-                      icon: Icon(Icons.arrow_forward_ios)),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Color.fromARGB(199, 175, 188, 255)),
-                height: MediaQuery.of(context).size.height / 12,
-                width: MediaQuery.of(context).size.width / 1.0,
-                child: ListTile(
-                  leading: Icon(Icons.layers),
-                  title: Text(
-                    'Layouts',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => layouts()));
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Color.fromARGB(199, 175, 188, 255)),
+                  height: MediaQuery.of(context).size.height / 12,
+                  width: MediaQuery.of(context).size.width / 1.0,
+                  child: ListTile(
+                    leading: Icon(Icons.layers),
+                    title: Text(
+                      'Layouts',
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                    ),
+                    subtitle: Text("All Type Layouts"),
+                    trailing: IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => layouts()));
+                        },
+                        icon: Icon(Icons.arrow_forward_ios)),
                   ),
-                  subtitle: Text("All Type Layouts"),
-                  trailing: IconButton(
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => layouts()));
-                      },
-                      icon: Icon(Icons.arrow_forward_ios)),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Color.fromARGB(199, 175, 188, 255)),
-                height: MediaQuery.of(context).size.height / 12,
-                width: MediaQuery.of(context).size.width / 1.0,
-                child: ListTile(
-                  leading: Icon(Icons.list),
-                  title: Text(
-                    'List',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => List_list()));
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Color.fromARGB(199, 175, 188, 255)),
+                  height: MediaQuery.of(context).size.height / 12,
+                  width: MediaQuery.of(context).size.width / 1.0,
+                  child: ListTile(
+                    leading: Icon(Icons.list),
+                    title: Text(
+                      'List',
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                    ),
+                    subtitle: Text("All Type List"),
+                    trailing: IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => List_list()));
+                        },
+                        icon: Icon(Icons.arrow_forward_ios)),
                   ),
-                  subtitle: Text("All Type List"),
-                  trailing: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => List_list()));
-                      },
-                      icon: Icon(Icons.arrow_forward_ios)),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Color.fromARGB(199, 175, 188, 255)),
-                height: MediaQuery.of(context).size.height / 12,
-                width: MediaQuery.of(context).size.width / 1.0,
-                child: ListTile(
-                  leading: Icon(Icons.app_shortcut),
-                  title: Text(
-                    'App Bars',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => AppBarList()));
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Color.fromARGB(199, 175, 188, 255)),
+                  height: MediaQuery.of(context).size.height / 12,
+                  width: MediaQuery.of(context).size.width / 1.0,
+                  child: ListTile(
+                    leading: Icon(Icons.app_shortcut),
+                    title: Text(
+                      'App Bars',
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                    ),
+                    subtitle: Text("All Type List"),
+                    trailing: IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => AppBarList()));
+                        },
+                        icon: Icon(Icons.arrow_forward_ios)),
                   ),
-                  subtitle: Text("All Type List"),
-                  trailing: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => AppBarList()));
-                      },
-                      icon: Icon(Icons.arrow_forward_ios)),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Color.fromARGB(199, 175, 188, 255)),
-                height: MediaQuery.of(context).size.height / 12,
-                width: MediaQuery.of(context).size.width / 1.0,
-                child: ListTile(
-                  leading: Icon(Icons.navigation),
-                  title: Text(
-                    'Navigation',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => navigations()));
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Color.fromARGB(199, 175, 188, 255)),
+                  height: MediaQuery.of(context).size.height / 12,
+                  width: MediaQuery.of(context).size.width / 1.0,
+                  child: ListTile(
+                    leading: Icon(Icons.navigation),
+                    title: Text(
+                      'Navigation',
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                    ),
+                    subtitle: Text("All Type Navigation"),
+                    trailing: IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => navigations()));
+                        },
+                        icon: Icon(Icons.arrow_forward_ios)),
                   ),
-                  subtitle: Text("All Type Navigation"),
-                  trailing: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => navigations()));
-                      },
-                      icon: Icon(Icons.arrow_forward_ios)),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Color.fromARGB(199, 175, 188, 255)),
-                height: MediaQuery.of(context).size.height / 12,
-                width: MediaQuery.of(context).size.width / 1.0,
-                child: ListTile(
-                  leading: Icon(Icons.animation),
-                  title: Text(
-                    'Animation',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => animationList()));
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Color.fromARGB(199, 175, 188, 255)),
+                  height: MediaQuery.of(context).size.height / 12,
+                  width: MediaQuery.of(context).size.width / 1.0,
+                  child: ListTile(
+                    leading: Icon(Icons.animation),
+                    title: Text(
+                      'Animation',
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                    ),
+                    subtitle: Text("All Type Animation"),
+                    trailing: IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => animationList()));
+                        },
+                        icon: Icon(Icons.arrow_forward_ios)),
                   ),
-                  subtitle: Text("All Type Animation"),
-                  trailing: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => animationList()));
-                      },
-                      icon: Icon(Icons.arrow_forward_ios)),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Color.fromARGB(199, 175, 188, 255)),
-                height: MediaQuery.of(context).size.height / 12,
-                width: MediaQuery.of(context).size.width / 1.0,
-                child: ListTile(
-                  leading: Icon(Icons.power),
-                  title: Text(
-                    'Plugins',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => plugins()));
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Color.fromARGB(199, 175, 188, 255)),
+                  height: MediaQuery.of(context).size.height / 12,
+                  width: MediaQuery.of(context).size.width / 1.0,
+                  child: ListTile(
+                    leading: Icon(Icons.power),
+                    title: Text(
+                      'Plugins',
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                    ),
+                    subtitle: Text("All Type Plugins"),
+                    trailing: IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => plugins()));
+                        },
+                        icon: Icon(Icons.arrow_forward_ios)),
                   ),
-                  subtitle: Text("All Type Plugins"),
-                  trailing: IconButton(
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => plugins()));
-                      },
-                      icon: Icon(Icons.arrow_forward_ios)),
                 ),
               ),
             ],
