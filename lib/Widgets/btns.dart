@@ -55,7 +55,15 @@ class _buttonsState extends State<buttons> {
                           ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.purple[500]),
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                  content: Text("This is a Elevated Button"),
+                                  duration: Duration(seconds: 2),
+                                  action: SnackBarAction(
+                                      label: "ok", onPressed: () {}),
+                                ));
+                              },
                               child: Text(
                                 'Elevated Button',
                                 style: TextStyle(fontSize: 16),
@@ -63,7 +71,15 @@ class _buttonsState extends State<buttons> {
                           ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.grey),
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                  content: Text("This is a Elevated Button"),
+                                  duration: Duration(seconds: 2),
+                                  action: SnackBarAction(
+                                      label: "ok", onPressed: () {}),
+                                ));
+                              },
                               child: Text(
                                 'Elevated Button',
                                 style: TextStyle(fontSize: 16),
@@ -86,7 +102,15 @@ class _buttonsState extends State<buttons> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                  content: Text("This is a TextButton"),
+                                  duration: Duration(seconds: 2),
+                                  action: SnackBarAction(
+                                      label: "ok", onPressed: () {}),
+                                ));
+                              },
                               child: Text(
                                 'Text-Button',
                                 style: TextStyle(fontSize: 16),
@@ -97,7 +121,15 @@ class _buttonsState extends State<buttons> {
                                     MaterialStatePropertyAll<Color>(
                                         Colors.grey),
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                  content: Text("This is a TextButton"),
+                                  duration: Duration(seconds: 2),
+                                  action: SnackBarAction(
+                                      label: "ok", onPressed: () {}),
+                                ));
+                              },
                               child: Text(
                                 'Text-Button',
                                 style: TextStyle(fontSize: 16),
@@ -120,7 +152,15 @@ class _buttonsState extends State<buttons> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           OutlinedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                  content: Text("This is a outlinedButton"),
+                                  duration: Duration(seconds: 2),
+                                  action: SnackBarAction(
+                                      label: "ok", onPressed: () {}),
+                                ));
+                              },
                               child: Text(
                                 'Outline Button',
                                 style: TextStyle(color: Colors.black),
@@ -130,7 +170,15 @@ class _buttonsState extends State<buttons> {
                                   backgroundColor:
                                       MaterialStatePropertyAll<Color>(
                                           Colors.grey)),
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                  content: Text("This is a Outline Button"),
+                                  duration: Duration(seconds: 2),
+                                  action: SnackBarAction(
+                                      label: "ok", onPressed: () {}),
+                                ));
+                              },
                               child: Text(
                                 'Outline Button',
                                 style: TextStyle(color: Colors.white),
@@ -153,14 +201,30 @@ class _buttonsState extends State<buttons> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                  content: Text("This is a Icon Button"),
+                                  duration: Duration(seconds: 2),
+                                  action: SnackBarAction(
+                                      label: "ok", onPressed: () {}),
+                                ));
+                              },
                               icon: Icon(
                                 Icons.message,
                                 size: 35,
                                 color: Colors.red,
                               )),
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                  content: Text("This is a Icon Button"),
+                                  duration: Duration(seconds: 2),
+                                  action: SnackBarAction(
+                                      label: "ok", onPressed: () {}),
+                                ));
+                              },
                               icon: Icon(
                                 Icons.home,
                                 size: 35,
@@ -221,7 +285,7 @@ class _buttonsState extends State<buttons> {
                                   PopupMenuItem(
                                       value: 'Message', child: Text('Message'))
                                 ];
-                              })
+                              }),
                         ],
                       ),
                     ]))));
